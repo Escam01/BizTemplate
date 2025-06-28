@@ -20,11 +20,11 @@ function Hero() {
 						</div>
 						<div className={st.buttonContainer}>
 							<Button size='lg' className={st.primaryButton}>
-								<Icon name='ArrowRight' size={18} className={st.iconMargin} />
+								<Icon name='ArrowRight' size={24} className={st.iconMargin} />
 								Начать сейчас
 							</Button>
 							<Button variant='outline' size='lg' className={st.outlineButton}>
-								<Icon name='Play' size={18} className={st.iconMargin} />
+								<Icon name='Play' size={24} className={st.iconMargin} />
 								Посмотреть демо
 							</Button>
 						</div>
