@@ -1,6 +1,6 @@
-import Navigation from '../Componets/Navigation/Navigation.jsx'
-import { Card, CardContent } from '../Componets/UI/card/card.jsx'
-import Icon from '../Componets/UI/icon/Icon.jsx'
+import Navigation from '../Components/Navigation/Navigation.jsx'
+import { Card, CardContent } from '../Components/UI/card/card.jsx'
+import Icon from '../Components/UI/icon/Icon.jsx'
 import st from './PagesStyles/About.module.scss'
 
 function About() {

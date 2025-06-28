@@ -12,15 +12,15 @@ import {
 	XAxis,
 	YAxis,
 } from 'recharts'
-import Navigation from '../Componets/Navigation/Navigation.jsx'
-import { Button } from '../Componets/UI/button/button.jsx'
+import Navigation from '../Components/Navigation/Navigation.jsx'
+import { Button } from '../Components/UI/button/button.jsx'
 import {
 	Card,
 	CardContent,
 	CardHeader,
 	CardTitle,
-} from '../Componets/UI/card/card.jsx'
-import Icon from '../Componets/UI/icon/Icon.jsx'
+} from '../Components/UI/card/card.jsx'
+import Icon from '../Components/UI/icon/Icon.jsx'
 
 import st from './PagesStyles/Dashboard.module.scss'
 

@@ -1,7 +1,7 @@
-import CTA from '../Componets/CTA/CTA'
-import Features from '../Componets/Features/Features'
-import Hero from '../Componets/Hero/Hero'
-import Navigation from '../Componets/Navigation/Navigation'
+import CTA from '../Components/CTA/CTA'
+import Features from '../Components/Features/Features'
+import Hero from '../Components/Hero/Hero'
+import Navigation from '../Components/Navigation/Navigation'
 import st from './PagesStyles/Index.module.scss'
 
 function Index() {

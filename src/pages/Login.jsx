@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Navigation from '../Componets/Navigation/Navigation'
-import { Button } from '../Componets/UI/button/button'
+import Navigation from '../Components/Navigation/Navigation'
+import { Button } from '../Components/UI/button/button'
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-} from '../Componets/UI/card/card.jsx'
-import Icon from '../Componets/UI/icon/Icon.jsx'
-import { Input } from '../Componets/UI/input/input.jsx'
-import { Label } from '../Componets/UI/label/label.jsx'
+} from '../Components/UI/card/card.jsx'
+import Icon from '../Components/UI/icon/Icon.jsx'
+import { Input } from '../Components/UI/input/input.jsx'
+import { Label } from '../Components/UI/label/label.jsx'
 import '../Styles/variables.scss'
 import st from './PagesStyles/Login.module.scss'
 

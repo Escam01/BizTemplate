@@ -1,15 +1,15 @@
-import Navigation from '../Componets/Navigation/Navigation'
-import { Button } from '../Componets/UI/button/button.jsx'
+import Navigation from '../Components/Navigation/Navigation'
+import { Button } from '../Components/UI/button/button.jsx'
 import {
 	Card,
 	CardContent,
 	CardHeader,
 	CardTitle,
-} from '../Componets/UI/card/card.jsx'
-import Icon from '../Componets/UI/icon/Icon'
-import { Input } from '../Componets/UI/input/input.jsx'
-import { Label } from '../Componets/UI/label/label.jsx'
-import { Textarea } from '../Componets/UI/textarea/textarea.jsx'
+} from '../Components/UI/card/card.jsx'
+import Icon from '../Components/UI/icon/Icon'
+import { Input } from '../Components/UI/input/input.jsx'
+import { Label } from '../Components/UI/label/label.jsx'
+import { Textarea } from '../Components/UI/textarea/textarea.jsx'
 import st from './PagesStyles/Contacts.module.scss'
 
 function Contacts() {
