@@ -1,5 +1,5 @@
 import * as React from 'react'
-import st from './Table.module.scss'
+import st from './table.module.scss'
 
 const Table = React.forwardRef((props, ref) => (
 	<div className={st.root}>

@@ -1,5 +1,5 @@
 import * as LucideIcons from 'lucide-react'
-import st from './Icon.module.scss'
+import st from './icon.module.scss'
 const Icon = ({ name, fallback = 'CircleAlert', ...props }) => {
 	const IconComponent = LucideIcons[name]
 

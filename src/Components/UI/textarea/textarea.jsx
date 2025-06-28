@@ -1,5 +1,5 @@
 import * as React from 'react'
-import st from './Textarea.module.scss'
+import st from './textarea.module.scss'
 
 const Textarea = React.forwardRef((props, ref) => {
 	return (

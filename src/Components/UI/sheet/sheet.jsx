@@ -2,7 +2,7 @@ import Icon from '@/components/ui/icon'
 import { cn } from '@/lib/utils'
 import * as SheetPrimitive from '@radix-ui/react-dialog'
 import * as React from 'react'
-import st from './Sheet.module.scss'
+import st from './sheet.module.scss'
 const Sheet = SheetPrimitive.Root
 const SheetTrigger = SheetPrimitive.Trigger
 const SheetClose = SheetPrimitive.Close

@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import * as SliderPrimitive from '@radix-ui/react-slider'
 import * as React from 'react'
-import st from './Slider.module.scss'
+import st from './slider.module.scss'
 
 const Slider = React.forwardRef(({ className, ...props }, ref) => (
 	<SliderPrimitive.Root ref={ref} className={cn(st.root, className)} {...props}>

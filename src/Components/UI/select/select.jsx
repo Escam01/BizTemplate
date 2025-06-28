@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import * as SelectPrimitive from '@radix-ui/react-select'
 import { Check, ChevronDown, ChevronUp } from 'lucide-react'
 import * as React from 'react'
-import st from './Select.module.scss' // Импортируем стили
+import st from './select.module.scss' // Импортируем стили
 const Select = SelectPrimitive.Root
 const SelectGroup = SelectPrimitive.Group
 const SelectValue = SelectPrimitive.Value

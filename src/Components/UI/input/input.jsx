@@ -1,5 +1,5 @@
 import React from 'react'
-import st from './Input.module.scss'
+import st from './input.module.scss'
 const Input = React.forwardRef((props, ref) => {
 	const { className, type, ...otherProps } = props
 	return (

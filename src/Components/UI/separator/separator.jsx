@@ -1,6 +1,6 @@
 import * as SeparatorPrimitive from '@radix-ui/react-separator'
 import React from 'react'
-import st from './Separator.module.scss'
+import st from './separator.module.scss'
 
 const Separator = React.forwardRef(
 	(

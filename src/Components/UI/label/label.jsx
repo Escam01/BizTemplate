@@ -1,6 +1,6 @@
 import * as LabelPrimitive from '@radix-ui/react-label'
 import React from 'react'
-import st from './Label.module.scss'
+import st from './label.module.scss'
 const Label = React.forwardRef(({ className, ...props }, ref) => (
 	<LabelPrimitive.Root
 		ref={ref}

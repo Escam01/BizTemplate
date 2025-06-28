@@ -1,7 +1,7 @@
 import * as ToastPrimitives from '@radix-ui/react-toast'
 import * as React from 'react'
 import { cn } from '../../../lib/utils'
-import st from './Toast.module.scss'
+import st from './toast.module.scss'
 
 const ToastProvider = ToastPrimitives.Provider
 const ToastViewport = React.forwardRef(({ className, ...props }, ref) => (

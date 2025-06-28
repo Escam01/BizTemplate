@@ -1,6 +1,6 @@
 import * as TabsPrimitive from '@radix-ui/react-tabs'
 import * as React from 'react'
-import st from './Tabs.module.scss'
+import st from './tabs.module.scss'
 const Tabs = TabsPrimitive.Root
 const TabsList = React.forwardRef((props, ref) => (
 	<TabsPrimitive.List

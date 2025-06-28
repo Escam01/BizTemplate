@@ -2,7 +2,7 @@ import Icon from '@/components/ui/icon'
 import { cn } from '@/lib/utils'
 import * as SheetPrimitive from '@radix-ui/react-dialog'
 import * as React from 'react'
-import st from './Sidebar.module.scss' // Импортируем стили
+import st from './sidebar.module.scss' // Импортируем стили
 const Sidebar = SheetPrimitive.Root
 const SidebarTrigger = SheetPrimitive.Trigger
 const SidebarClose = SheetPrimitive.Close

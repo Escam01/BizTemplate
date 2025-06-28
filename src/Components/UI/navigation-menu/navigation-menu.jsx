@@ -1,7 +1,7 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import { ChevronRight } from 'lucide-react'
 import * as React from 'react'
-import st from './NavigationMenu.module.scss'
+import st from './navigationMenu.module.scss'
 const NavigationMenuMenu = NavigationMenuPrimitive.Menu
 const NavigationMenuGroup = NavigationMenuPrimitive.Group
 const NavigationMenuPortal = NavigationMenuPrimitive.Portal

@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import HoverCardPrimitive from '@radix-ui/react-hover-card'
 import React from 'react'
-import st from './HoverCard.module.scss'
+import st from './hoverCard.module.scss'
 const HoverCard = HoverCardPrimitive.Root
 const HoverCardTrigger = HoverCardPrimitive.Trigger
 const HoverCardContent = React.forwardRef((props, ref) => {
