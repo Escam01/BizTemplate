@@ -1,0 +1,12 @@
+.root {
+	background-color: var(--border-color);
+	flex-shrink: 0;
+	.horizontal {
+		height: 1px;
+		width: 100%;
+	}
+	.vertical {
+		height: 100%;
+		width: 1px;
+	}
+}

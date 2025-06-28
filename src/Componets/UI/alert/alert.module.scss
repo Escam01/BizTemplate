@@ -1,0 +1,25 @@
+.alert {
+	position: relative;
+	width: 100%;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	.base {
+		background-color: var(--background);
+		color: var(--foreground);
+	}
+	.default {
+		background-color: var(--background);
+		color: var(--foreground);
+	}
+	.destructive {
+		border: 1px solid rgba(255, 0, 0, 0.5);
+		color: var(--destructive);
+	}
+	.alertTitle {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+	.alertDescription {
+		font-size: 0.875rem;
+	}
+}

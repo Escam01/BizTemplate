@@ -1,0 +1,158 @@
+.root {
+	min-height: 100vh;
+	background-color: #f9fafb;
+	.dashboardContent {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.dashboardTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #6b5c8a;
+	}
+	.dashboardSubtitle {
+		color: #4b5563;
+		margin-top: 0.5rem;
+	}
+	.exportButton {
+		background-color: #6b5c8a;
+		transition: background-color 0.3s;
+		color: white;
+		height: 30px;
+	}
+	.exportButton:hover {
+		background-color: rgba(107, 92, 138, 0.9);
+	}
+	.metricsGrid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1.5rem;
+	}
+	.metricCard {
+		transition: box-shadow 0.3s;
+	}
+	.metricCard:hover {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+	.cardContent {
+		padding: 1.5rem;
+	}
+	.metricDetails {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.metricTitle {
+		font-size: 0.875rem;
+		color: #4b5563;
+		margin-bottom: 0.25rem;
+	}
+	.metricValue {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #6b5c8a;
+	}
+	.metricTrend {
+		display: flex;
+		align-items: center;
+		font-size: 0.875rem;
+		margin-top: 0.5rem;
+	}
+	.trendUp {
+		color: #16a34a;
+	}
+	.trendDown {
+		color: #dc2626;
+	}
+	.metricIconContainer {
+		width: 3rem;
+		height: 3rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.chartsGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+	.chartTitle {
+		font-family: 'Montserrat', sans-serif;
+	}
+	.trafficActivityGrid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+	.trafficCard {
+		grid-column: span 1;
+	}
+	.activityCard {
+		grid-column: span 2;
+	}
+	.trafficSources {
+		margin-top: 1rem;
+	}
+	.trafficSource {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.875rem;
+	}
+	.sourceColor {
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 50%;
+	}
+	.sourceValue {
+		font-weight: 500;
+	}
+	.activityList {
+		margin-top: 1rem;
+	}
+	.activityItem {
+		display: flex;
+		align-items: center;
+		padding: 0.75rem;
+		background-color: #f9fafb;
+		border-radius: 0.5rem;
+	}
+	.activityIcon {
+		width: 2rem;
+		height: 2rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.activityDetails {
+		flex: 1;
+	}
+	.activityText {
+		font-size: 0.875rem;
+	}
+	.activityUser {
+		font-weight: 500;
+		color: #6b5c8a;
+	}
+	.activityTime {
+		font-size: 0.75rem;
+		color: #6b7280;
+	}
+	.iconMargin {
+		margin-right: 0.5rem;
+	}
+	.iconPrimary {
+		color: #6b5c8a;
+	}
+}

@@ -1,0 +1,72 @@
+.root {
+	min-height: 100vh;
+	background: linear-gradient(to bottom right, rgba(204, 153, 255, 0.2), white);
+	.formContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem 1rem;
+	}
+	.card {
+		width: 100%;
+		max-width: 400px;
+		background-color: #e5e7eb;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.cardHeader {
+		text-align: center;
+	}
+	.iconContainer {
+		margin: 0 auto;
+		width: 3rem;
+		height: 3rem;
+		background-color: var(--primary-color);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	.icon {
+		color: black;
+	}
+	.cardTitle {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.inputGroup {
+		margin-bottom: 1rem;
+		min-width: 300px;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.submitButton {
+		width: 50%;
+		background-color: #9b87f5;
+		transition: background-color 0.3s;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+	.loginPrompt {
+		margin-top: 1.5rem;
+		text-align: center;
+	}
+	.promptText {
+		font-size: 0.875rem;
+		color: #4b5563;
+	}
+	.link {
+		color: var(--primary-color);
+		font-weight: 500;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

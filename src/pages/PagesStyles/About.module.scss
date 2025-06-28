@@ -1,0 +1,209 @@
+.root {
+	min-height: 100vh;
+	background-color: white;
+	.content {
+		max-width: 7xl;
+		margin: 0 auto;
+		padding: 4rem 1rem;
+	}
+	.spaceY16 {
+		margin-bottom: 4rem;
+	}
+	.header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	.title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.description {
+		font-size: 1.125rem;
+		color: #4b5563;
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	.grid {
+		display: grid;
+		gap: 3rem;
+		grid-template-columns: repeat(1, 1fr);
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	.storySection {
+		margin-bottom: 4rem;
+	}
+	.storyTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.storyText {
+		color: #4b5563;
+	}
+	.imageContainer {
+		position: relative;
+	}
+	.image {
+		width: 100%;
+		height: 16rem;
+		object-fit: cover;
+		border-radius: 0.5rem;
+	}
+	.imageOverlay {
+		position: absolute;
+		inset: 0;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+	}
+	.missionVision {
+		display: flex;
+		gap: 2rem;
+	}
+	.mission,
+	.vision {
+		flex: 1;
+	}
+	.iconContainer {
+		width: 3rem;
+		height: 3rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.icon {
+		color: #6b5c8a;
+	}
+	.missionTitle,
+	.visionTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.missionDescription,
+	.visionDescription {
+		color: #4b5563;
+	}
+	.valuesSection {
+		margin-top: 4rem;
+	}
+	.valuesHeader {
+		text-align: center;
+	}
+	.valuesTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.valuesDescription {
+		color: #4b5563;
+	}
+	.valuesGrid {
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1024px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	.valueCard {
+		text-align: center;
+		transition: box-shadow 0.2s;
+		&:hover {
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+	}
+	.valueContent {
+		padding: 1.5rem;
+	}
+	.valueIconContainer {
+		width: 4rem;
+		height: 4rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+	}
+	.valueTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.valueDescription {
+		color: #4b5563;
+	}
+	.teamSection {
+		margin-top: 4rem;
+	}
+	.teamHeader {
+		text-align: center;
+	}
+	.teamTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.teamDescription {
+		color: #4b5563;
+	}
+	.teamGrid {
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1024px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	.teamCard {
+		text-align: center;
+		transition: box-shadow 0.2s;
+		&:hover {
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+	}
+	.teamContent {
+		padding: 1.5rem;
+	}
+	.teamImage {
+		width: 6rem;
+		height: 6rem;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 0 auto;
+	}
+	.teamMemberName {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.teamMemberRole {
+		color: #6b5c8a;
+		font-weight: 500;
+	}
+	.teamMemberDescription {
+		color: #4b5563;
+		font-size: 0.875rem;
+	}
+}

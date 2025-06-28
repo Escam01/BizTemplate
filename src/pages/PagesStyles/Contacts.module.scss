@@ -1,0 +1,185 @@
+.root {
+	min-height: 100vh;
+	background-color: white;
+	.content {
+		max-width: 7xl;
+		margin: 0 auto;
+		padding: 4rem 1rem;
+	}
+	.spaceY16 {
+		margin-bottom: 4rem;
+	}
+	.header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	.title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.description {
+		font-size: 1.125rem;
+		color: #4b5563;
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	.grid {
+		display: grid;
+		gap: 3rem;
+		grid-template-columns: 1fr;
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: 1024px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.contactInfo {
+		space-y: 8;
+	}
+	.contactTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #4b3b6a;
+		margin-bottom: 1.5rem;
+	}
+	.contactList {
+		space-y: 6;
+	}
+	.contactItem {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+	.iconContainer {
+		width: 3rem;
+		height: 3rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.contactItemTitle {
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.contactValue {
+		font-weight: 500;
+		color: #1f2937;
+	}
+	.contactDescription {
+		color: #4b5563;
+		font-size: 0.875rem;
+	}
+	.socialTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #4b3b6a;
+		margin-bottom: 1rem;
+	}
+	.socialLinks {
+		display: flex;
+		gap: 1rem;
+	}
+	.socialLink {
+		width: 2.5rem;
+		height: 2.5rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.2s;
+		&:hover {
+			background-color: rgba(107, 92, 138, 0.2);
+		}
+	}
+	.contactForm {
+		grid-column: span 2;
+	}
+	.cardTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.5rem;
+	}
+	.cardContent {
+		padding: 2rem;
+	}
+	.formGrid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	.formGroup {
+		display: flex;
+		flex-direction: column;
+	}
+	.submitButton {
+		width: 100%;
+		height: 30px;
+		margin-top: 5px;
+		background-color: #6b5c8a;
+		color: white;
+		&:hover {
+			background-color: rgba(107, 92, 138, 0.9);
+		}
+	}
+	.privacyPolicy {
+		font-size: 0.875rem;
+		color: #4b5563;
+		text-align: center;
+	}
+	.mapSection {
+		margin-top: 4rem;
+	}
+	.mapTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		color: #4b3b6a;
+		text-align: center;
+	}
+	.mapContainer {
+		position: relative;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+	.mapImage {
+		width: 100%;
+		height: 24rem;
+		object-fit: cover;
+	}
+	.mapOverlay {
+		position: absolute;
+		inset: 0;
+		background-color: rgba(107, 92, 138, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.mapInfo {
+		background-color: white;
+		border-radius: 0.5rem;
+		padding: 1.5rem;
+		text-align: center;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	.mapIcon {
+		color: #6b5c8a;
+		margin-bottom: 0.5rem;
+	}
+	.mapInfoTitle {
+		font-weight: bold;
+		color: #4b3b6a;
+	}
+	.mapInfoAddress {
+		color: #4b5563;
+	}
+}

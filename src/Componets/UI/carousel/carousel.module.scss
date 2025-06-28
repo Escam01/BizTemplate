@@ -1,0 +1,52 @@
+.carousel {
+  position: relative;
+  .carouselContent {
+  overflow: hidden;
+}
+.carouselInner {
+  display: flex;
+}
+.horizontal {
+  margin-left: -1rem; 
+}
+.vertical {
+  margin-top: -1rem; 
+}
+.carouselItem {
+  min-width: 0;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+}
+.itemHorizontal {
+  padding-left: 1rem; 
+}
+.itemVertical {
+  padding-top: 1rem; 
+}
+.carouselButton {
+  position: absolute;
+  height: 2rem; 
+  width: 2rem; 
+  border-radius: 9999px; 
+}
+.buttonLeft {
+  left: -3rem; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+.buttonRight {
+  right: -3rem; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+.buttonVertical {
+  top: -3rem; 
+  left: 50%; 
+  transform: translateX(-50%) rotate(90deg);
+}
+.arrowIcon {
+  height: 1rem; 
+  width: 1rem; 
+}
+}

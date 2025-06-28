@@ -1,0 +1,53 @@
+.root {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	opacity: 1;
+	.input {
+		cursor: not-allowed;
+	}
+	.group {
+		display: flex;
+		align-items: center;
+	}
+	.slot {
+		position: relative;
+		display: flex;
+		height: 2.5rem;
+		width: 2.5rem;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #d1d5db;
+		font-size: 0.875rem;
+		transition: all 0.2s;
+		border-radius: 0.375rem;
+	}
+	.active {
+		z-index: 10;
+		ring: 2px solid #6b5c8a;
+		ring-offset: 2px;
+	}
+	.fakeCaretContainer {
+		pointer-events: none;
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.fakeCaret {
+		height: 1rem;
+		width: 1px;
+		background-color: #4b5563;
+		animation: caret-blink 1s infinite;
+	}
+	@keyframes caret-blink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+}

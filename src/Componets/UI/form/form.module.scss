@@ -1,0 +1,20 @@
+.formItem {
+  margin-bottom: 0.5rem;
+  .error {
+  color: var(--destructive);
+}
+.formControl {
+  border: 1px solid var(--input);
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+.formDescription {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+.formMessage {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--destructive);
+}
+}
