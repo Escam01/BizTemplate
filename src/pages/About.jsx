@@ -94,7 +94,7 @@ function About() {
 						</div>
 						<div className={st.imageContainer}>
 							<img
-								src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop'
+								src='https://img.freepik.com/premium-photo/panorama-shot-of-frontend-developer-team-brainstorming-ui-and-ux-designs-for-mobile-app-on-laptop-computer-screen-user-interface-development-team-planning-for-userfriendly-ui-design-scrutinize_31965-216307.jpg?w=2000'
 								alt='Наша команда'
 								className={st.image}
 							/>
