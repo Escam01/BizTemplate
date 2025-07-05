@@ -1,0 +1,56 @@
+.root {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	.resizeHandle {
+		position: relative;
+		display: flex;
+		width: 1px;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--border-color);
+		outline: none;
+		&:focus-visible {
+			ring: 1px solid var(--ring-color);
+			ring-offset: 1px;
+		}
+		&[data-panel-group-direction='vertical'] {
+			height: 100%;
+			width: auto;
+			&::after {
+				content: '';
+				position: absolute;
+				inset-y: 0;
+				left: 50%;
+				width: 1px;
+				transform: translateX(-50%);
+			}
+		}
+		&[data-panel-group-direction='horizontal'] {
+			height: auto;
+			width: 100%;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.handleContainer {
+		z-index: 10;
+		display: flex;
+		height: 1rem;
+		width: 0.75rem;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.125rem;
+		background-color: var(--border-color);
+	}
+	.handleIcon {
+		height: 0.625rem;
+		width: 0.625rem;
+	}
+}

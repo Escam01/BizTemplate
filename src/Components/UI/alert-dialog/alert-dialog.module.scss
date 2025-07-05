@@ -1,0 +1,32 @@
+.alertDialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  .alertDialogContent {
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.alertDialogHeader {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.alertDialogFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+.alertDialogTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.alertDialogDescription {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.alertDialogCancel {
+  margin-left: 0.5rem;
+}
+}

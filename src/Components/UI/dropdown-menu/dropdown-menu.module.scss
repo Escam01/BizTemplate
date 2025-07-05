@@ -1,0 +1,114 @@
+.subTrigger {
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background-color 0.2s;
+  &:focus {
+    background-color: var(--accent);
+  }
+  .inset {
+  padding-left: 2rem;
+}
+.chevronIcon {
+  margin-left: auto;
+  height: 1rem;
+  width: 1rem;
+}
+.subContent {
+  z-index: 50;
+  min-width: 8rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: var(--popover);
+  padding: 0.25rem;
+  color: var(--popover-foreground);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.content {
+  z-index: 50;
+  min-width: 8rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: var(--popover);
+  padding: 0.25rem;
+  color: var(--popover-foreground);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.item {
+  position: relative;
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background-color 0.2s;
+  &:focus {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  &[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.checkboxItem {
+  position: relative;
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background-color 0.2s;
+  &:focus {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  &[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.radioItem {
+  position: relative;
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background-color 0.2s;
+  &:focus {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  &[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.label {
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.separator {
+  margin: -0.25rem 0;
+  height: 1px;
+  background-color: var(--muted);
+}
+.shortcut {
+  margin-left: auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+}

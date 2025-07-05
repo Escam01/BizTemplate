@@ -1,0 +1,73 @@
+.root {
+	position: fixed;
+	inset: 0;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.8);
+	animation: fade-in 0.2s ease-in-out;
+	.sheet {
+		position: fixed;
+		z-index: 50;
+		background-color: white;
+		padding: 1.5rem;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease-in-out;
+	}
+	.top {
+		top: 0;
+		left: 0;
+		right: 0;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.bottom {
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-top: 1px solid #e5e5e5;
+	}
+	.left {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 300px;
+		border-right: 1px solid #e5e5e5;
+	}
+	.right {
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 300px;
+		border-left: 1px solid #e5e5e5;
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 1rem;
+	}
+	.footer {
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 1rem;
+	}
+	.title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #333;
+	}
+	.description {
+		font-size: 0.875rem;
+		color: #666;
+	}
+	.closeButton {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		transition: opacity 0.2s;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

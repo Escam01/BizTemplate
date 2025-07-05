@@ -1,0 +1,339 @@
+.root {
+  min-height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: white;
+  // overflow: hidden;
+
+  .content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #6b5c8a, #d6bcfa);
+      border-radius: 2px;
+    }
+  }
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #4b3b6a;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .storySection {
+    margin-bottom: 6rem;
+  }
+
+  .storyGrid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .storyContent {
+    order: 1;
+
+    @media (min-width: 1024px) {
+      order: initial;
+    }
+  }
+
+  .storyTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #4b3b6a;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .storyText {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .imageContainer {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(107, 92, 138, 0.15);
+    order: 2;
+
+    @media (min-width: 1024px) {
+      order: initial;
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .missionVision {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .mission,
+  .vision {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 25px -5px rgba(107, 92, 138, 0.1);
+    border: 1px solid rgba(107, 92, 138, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .missionHeader,
+  .visionHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .iconContainer {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(107, 92, 138, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .icon {
+    color: #6b5c8a;
+    font-size: 1.5rem;
+  }
+
+  .missionTitle,
+  .visionTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4b3b6a;
+    margin: 0;
+  }
+
+  .missionDescription,
+  .visionDescription {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .valuesSection {
+    margin-bottom: 6rem;
+  }
+
+  .valuesHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .valuesTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #4b3b6a;
+    margin-bottom: 1.5rem;
+  }
+
+  .valuesDescription {
+    color: #6b7280;
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .valuesGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .valueCard {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 25px -5px rgba(107, 92, 138, 0.1);
+    border: 1px solid rgba(107, 92, 138, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -5px rgba(107, 92, 138, 0.15);
+    }
+  }
+
+  .valueIconContainer {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(107, 92, 138, 0.1);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+
+  .valueTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4b3b6a;
+    margin-bottom: 1rem;
+  }
+
+  .valueDescription {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .teamSection {
+    margin-bottom: 4rem;
+  }
+
+  .teamHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .teamTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #4b3b6a;
+    margin-bottom: 1.5rem;
+  }
+
+  .teamDescription {
+    color: #6b7280;
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .teamGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .teamCard {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(107, 92, 138, 0.1);
+    border: 1px solid rgba(107, 92, 138, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -5px rgba(107, 92, 138, 0.15);
+    }
+  }
+
+  .teamImage {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 3px solid rgba(107, 92, 138, 0.1);
+  }
+
+  .teamMemberName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #4b3b6a;
+    margin-bottom: 0.5rem;
+  }
+
+  .teamMemberRole {
+    color: #6b5c8a;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .teamMemberDescription {
+    color: #6b7280;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+}

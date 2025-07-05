@@ -1,0 +1,84 @@
+// Flexbox mixins
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin flex-start {
+	display: flex;
+	align-items: center;
+}
+
+// Grid mixins
+@mixin grid-cols($cols) {
+	display: grid;
+	grid-template-columns: repeat($cols, 1fr);
+}
+
+// Container mixin
+@mixin container {
+	max-width: $container-max-width;
+	margin: 0 auto;
+	padding-left: $spacing-4;
+	padding-right: $spacing-4;
+
+	@media (min-width: $breakpoint-sm) {
+		padding-left: $spacing-6;
+		padding-right: $spacing-6;
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		padding-left: $spacing-8;
+		padding-right: $spacing-8;
+	}
+}
+
+// Button base styles
+@mixin button-base {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: $radius;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	border: none;
+	text-decoration: none;
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}
+
+// Responsive breakpoints
+@mixin mobile {
+	@media (max-width: #{$breakpoint-md - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: $breakpoint-md) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $breakpoint-lg) {
+		@content;
+	}
+}
+
+@mixin xl-desktop {
+	@media (min-width: $breakpoint-xl) {
+		@content;
+	}
+}

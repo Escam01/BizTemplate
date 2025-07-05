@@ -1,0 +1,22 @@
+.avatar {
+  position: relative;
+  display: flex;
+  height: 2.5rem; /* 10 */
+  width: 2.5rem; /* 10 */
+  overflow: hidden;
+  border-radius: 9999px;
+  .avatarImage {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  width: 100%;
+}
+.avatarFallback {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--muted); /* Замените на нужный цвет */
+}
+}

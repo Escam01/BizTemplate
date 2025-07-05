@@ -1,0 +1,88 @@
+.root {
+  background: linear-gradient(
+    to right,
+    rgba(107, 92, 138, 1),
+    rgba(107, 92, 138, 0.8)
+  );
+  padding: 5rem 0;
+  .container {
+    max-width: 4xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .textContainer {
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  .description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+  }
+  .primaryButton,
+  .outlineButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.1s ;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    user-select: none;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+    &:hover {
+		transform: translatey(4px);
+		background-color: rgba(229, 231, 235, 0.5);
+    }
+	&:active {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  }
+  .featuresContainer {
+    padding-top: 2rem;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .featureText {
+    font-size: 0.875rem;
+  }
+}

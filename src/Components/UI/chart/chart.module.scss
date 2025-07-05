@@ -1,0 +1,70 @@
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  text-align: xs;
+  .tooltipContainer {
+  display: grid;
+  min-width: 8rem;
+  align-items: start;
+  gap: 0.375rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--background);
+  padding: 0.625rem 0.625rem;
+  font-size: x-large;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.tooltipContent {
+  display: grid;
+  gap: 0.375rem;
+}
+.tooltipItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.indicator {
+  border-radius: 2px;
+}
+.indicatorDot {
+  height: 0.625rem;
+  width: 0.625rem;
+}
+.indicatorLine {
+  width: 0.25rem;
+}
+.indicatorDashed {
+  border: 1.5px dashed transparent;
+}
+.tooltipDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemLabel {
+  color: var(--muted-foreground);
+}
+.itemValue {
+  font-family: monospace;
+  font-weight: 500;
+  color: var(--foreground);
+}
+.legendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.legendColorBox {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 2px;
+}
+}

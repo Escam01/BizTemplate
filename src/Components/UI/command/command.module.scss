@@ -1,0 +1,84 @@
+.command {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+  .dialogContent {
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.commandInner {
+  padding: 1rem;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+}
+.searchIcon {
+  margin-right: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+  opacity: 0.5;
+}
+.input {
+  flex: 1;
+  height: 3rem;
+  background: transparent;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  outline: none;
+  color: var(--foreground);
+}
+.list {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.empty {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.group {
+  overflow: hidden;
+  padding: 0.5rem;
+  color: var(--foreground);
+}
+.separator {
+  margin: 0 -0.5rem;
+  height: 1px;
+  background-color: var(--border);
+}
+.item {
+  position: relative;
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  outline: none;
+  &:hover {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+}
+.shortcut {
+  margin-left: auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
+}
+::selection {
+  background-color: rgba(0, 123, 255, 0.5); /* Цвет фона выделенного текста */
+  color: white; /* Цвет текста выделенного текста */
+}
+}
+

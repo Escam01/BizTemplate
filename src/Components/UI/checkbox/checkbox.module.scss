@@ -1,0 +1,31 @@
+.checkbox {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+  border-radius: 0.125rem; /* rounded-sm */
+  border: 1px solid var(--primary); /* border-primary */
+  background-color: transparent; /* начальный цвет фона */
+  cursor: pointer;
+  outline: none;
+  &:focus-visible {
+    border-color: var(--ring); /* цвет границы при фокусе */
+    box-shadow: 0 0 0 2px var(--ring); /* эффект обводки */
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* disabled:opacity-50 */
+  }
+  &[data-state="checked"] {
+    background-color: var(--primary); /* data-[state=checked]:bg-primary */
+    color: var(--primary-foreground); /* data-[state=checked]:text-primary-foreground */
+  }
+  .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor; /* text-current */
+}
+.checkIcon {
+  height: 1rem; /* h-4 */
+  width: 1rem; /* w-4 */
+}
+}

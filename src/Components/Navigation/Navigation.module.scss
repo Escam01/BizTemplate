@@ -1,0 +1,142 @@
+.root {
+	background-color: white;
+	border-bottom: 1px solid #e5e7eb;
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	width: 100%;
+	font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+	.container {
+		max-width: 1280px; // Заменил 7xl на конкретное значение
+		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	.flexContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 4rem;
+	}
+
+	.logoContainer {
+		display: flex;
+		align-items: center;
+	}
+
+	.logoLink {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+
+	.logoIcon {
+		width: 2rem;
+		height: 2rem;
+		background-color: rgba(107, 92, 138, 0.1);
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logoText {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: #4b3b6a;
+		margin-left: 0.5rem;
+		transition: color 0.2s;
+
+		&:hover {
+			color: #201a2e;
+		}
+	}
+
+	.desktopNav {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.navLink,
+	.mobileNavLink {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		border-radius: 0.375rem;
+		font-size: 1.2rem;
+		font-weight: 500;
+		text-decoration: none;
+		transition: all 0.1s;
+	}
+
+	.activeLink {
+		color: #6b5c8a;
+		background-color: rgba(204, 153, 255, 0.2);
+	}
+
+	.inactiveLink {
+		color: #4b5563;
+
+		&:hover {
+			color: #6b5c8a;
+			background-color: rgba(229, 231, 235, 0.5);
+		}
+		&:active{
+			transform: translateY(4px);
+		}
+	}
+
+	.buttonGroup,
+	.mobileButtonGroup {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		font-size: xx-large;
+	}
+
+	.primaryButton {
+		font-size: 12px;
+		background-color: #6b5c8a;
+		color: white;
+		padding: 0.5rem 1rem;
+		height: auto;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background-color: rgba(107, 92, 138, 0.9);
+		}
+	}
+
+	.mobileNav {
+		display: none;
+	}
+
+	.mobileMenu {
+		border-top: 1px solid #e5e7eb;
+		background-color: white;
+	}
+
+	.mobileMenuContent {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.mobileButton {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.desktopNav {
+			display: none;
+		}
+
+		.mobileNav {
+			display: block;
+		}
+	}
+}
